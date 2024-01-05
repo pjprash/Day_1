@@ -1,13 +1,13 @@
-class BSC{
-public int x;
-public void setX(int a){x=a;}
-}
-class BCA{
-public static void main(String args[])
+import java.io.*;
+class Addition{
+public static void main(String[] args)
 {
-System.out.println("GoodMorning");
-BSC ob=new BSC();
-ob.setX(10);
-System.out.println("X:"+ob.x);
+int num1=20,num2=30,sum=0;
+System.out.println("num1="+num1);
+System.out.println("num2="+num2);
+sum =num1 + num2;
+System.out.println("The sum="+sum);
+System.out.println(num1 +"+"+num2 +"="+sum);
 }
 }
+

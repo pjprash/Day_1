@@ -1,11 +1,8 @@
-import java.io.*;
 class Test{
 public static void main(String[] args){
-int i=10;
-long l=i;
-double d=i;
-System.out.println("Integer:"+i);
-System.out.println("Long:"+l);
-System.out.println("Double:"+d);
+int n1=20;
+System.out.println("Numer="+n1);
+n1 = -n1;
+System.out.println("Result="+n1);
 }
 }

@@ -1,12 +1,15 @@
-import java.io.*;
-class Test{
-public static void main(String[] args)
+ class PrePostIncrementExample
 {
- double i= 100.245;
-short j=(short)i;
-int k=(int)i;
-System.out.println("Original Value Casting"+i);
-System.out.println("After Type Casting to  short"+j);
-System.out.println("After Type Casting to int"+k);
+public static void main(String args[]){
+int i=10;
+int a=i++;
+System.out.println("a="+a);
+System.out.println(i);++i;
+System.out.println(++i);
+System.out.println(i++);
+System.out.println(i);
+int j =10;
+int b=++j;
+System.out.println("b="+b);
 }
 }
