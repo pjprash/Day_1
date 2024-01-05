@@ -3,8 +3,8 @@ import java.util.*;
 class Test{
 static public void main(String args[])
 {
-Scanner sc=new Scanner(Scanner(System.in);
-int inpVar =sc.nextInt():
+Scanner sc=new Scanner(System.in);
+int inpVar =sc.nextInt();
 System.out.println(Test.printDay(inpVar));
 }
 public static String printDay(int dayno){
