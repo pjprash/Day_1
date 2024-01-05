@@ -1,16 +1,15 @@
 import java.util.Scanner;
-class difference{
-         static void sub(int a,int b)
-           {
-             System.out.println(a+" "+b+" = "+(a-b));
+
+class FrequencyDigits {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        int digitCount = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (Character.isDigit(str.charAt(i))) {
+                digitCount++;
             }
-	       public static void main(String args[])
-          	{
-               int a;
-	            int b;
-               Scanner s=new Scanner(System.in);
-               a=s.nextInt();
-               b=s.nextInt();
-               sub(a,b);
-	}
+        }
+        System.out.println("Number of digits: " + digitCount);
+    }
 }

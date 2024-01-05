@@ -1,16 +1,17 @@
-class UnaryOperatorExample{
-public static  void main(String[] args){
-int number =+76;
-System.out.println(number);
-number =-number;
-System.out.println(number);
-int a=20;
-a++;
-System.out.println(a);
-a--;
-System.out.println(a);
-boolean flag= false;
-System.out.println(flag);
-System.out.println(!flag);
+import java.util.Scanner;
+class Pattern2{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+char ch=sc.nextInt().charAt(0);
+int row=sc.nextInt();
+printPattern(ch,row);
 }
+}
+public static void printPattern(char c, int n){
+for(int i=1;i<=n;i++){
+printLine(c,i);
+}}
+public static void printLine(char c,int col){
+System.out.print("\n");
+for(int j=1;j<=col;j++)System.out.print(c);
 }

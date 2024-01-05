@@ -1,8 +1,9 @@
-class Test{
-public static void main(String[] args){
-int n1=20;
-System.out.println("Numer="+n1);
-n1 = -n1;
-System.out.println("Result="+n1);
+class ExampleFor5{
+public static void main(String args[]){
+int i;
+for(i=1;i<=999;i++);{
+System.out.println("Hello"+i);
+
+}
 }
 }

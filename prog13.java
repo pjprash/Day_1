@@ -1,16 +1,16 @@
- class PrePostDecrementExample
-{
+import java.util.Scanner;
+class Pattern1{
+public static void printPattern(char c, int n){
+for(int i=0;i<n;i++){
+System.out.print("\n");
+for(int j=0;j<=i;j++)System.out.println(c);
+}
+}
 public static void main(String args[]){
-int i=20;
-int a=i--;
-System.out.println("a="+a);
-System.out.println(i);--i;
-System.out.println(--i);
-System.out.println(i--);
-System.out.println(i);
-int j =10;
-int b=--j;
-System.out.println("b="+b);
-System.out.println("j "+j);
+Scanner sc=new Scanner(System.in);
+char ch=sc.next().charAt(0);
+int row=sc.nextInt();
+int column
+printPattern(ch,row);
 }
 }

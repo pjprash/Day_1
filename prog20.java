@@ -1,21 +1,38 @@
 import java.util.Scanner;
 
- class AlphabetCheck {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a character: ");
-               char inputChar = scanner.next().charAt(0)
-        if (isAlphabet(inputChar)) {
-            System.out.println(inputChar + " is an alphabet.");
+class Pattern4 {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        char ch = sc.next().charAt(0);
+        int row = sc.nextInt();
+        int x, y;
+        if (row % 2 == 0) {
+            x = y = row / 2;
         } else {
-            System.out.println(inputChar + " is not an alphabet.");
+            x = row / 2;
+            y = row / 2 + 1;
         }
-        scanner.close();
+        printPattern(ch, x);
+        printReversePattern(ch, y);
     }
 
-    // Function to check whether a character is an alphabet
-    private static boolean isAlphabet(char ch) {
-        // Check if the character is a lowercase or uppercase alphabet
-        return (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z');
+    public static void printReversePattern(char c, int n) {
+        for (int i = n; i >= 1; i--) {
+            printLine(c, i);
+        }
+    }
+
+    public static void printPattern(char c, int col) {
+        System.out.print("\n");
+        for (int i = 1; i <= col; i++) {
+            System.out.print(c);
+        }
+    }
+
+    public static void printLine(char c, int count) {
+        for (int i = 1; i <= count; i++) {
+            System.out.print(c);
+        }
+        System.out.println();
     }
 }

@@ -1,16 +1,27 @@
-class Main{
-public static void main(String[] args){
-int number=2;
-int result=number<<1; //1 bit left shift operation
-System.out.println(result); //2*2 print 4
-int n=3;
-int r= n<<2;
-Sysaaaatem.out.println(r);  //3*2*2 prints 12
- int x=20;
- int y=x>>1;
-System.out.println(y);
-int p=80;
-int q=p>>3;
-System.out.println(y);
-}
+import java.util.Scanner;
+
+class Pattern2 {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        char ch = sc.next().charAt(0);
+        int row = sc.nextInt();
+        printPattern(ch, row);
+    }
+
+    public static void printPattern(char c, int n) {
+        int i = 1;
+        while (i <= n) {
+            printLine(c, i);
+            i++;
+        }
+    }
+
+    public static void printLine(char c, int col) {
+        System.out.println();
+        int j = 1;
+        while (j <= col) {
+            System.out.print(c);
+            j++;
+        }
+    }
 }

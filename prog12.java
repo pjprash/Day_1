@@ -1,15 +1,21 @@
- class PrePostIncrementExample
-{
+import java.util.Scanner;
+class findmin{
 public static void main(String args[]){
-int i=10;
-int a=i++;
-System.out.println("a="+a);
-System.out.println(i);++i;
-System.out.println(++i);
-System.out.println(i++);
-System.out.println(i);
-int j =10;
-int b=++j;
-System.out.println("b="+b);
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+int b=sc.nextInt();
+int c=sc.nextInt();
+int min;
+if(a<b)
+{
+if(a<c) min=a;
+else min=c;
+}
+else
+{
+if(b<c) min=b;
+else min=c;
+}
+System.out.print("Minimum no is"+min);
 }
 }

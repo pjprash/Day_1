@@ -1,13 +1,22 @@
-import java.io.*;
-class Addition{
-public static void main(String[] args)
+import java.util.Scanner;
+class InputDayNumber{
+public static void displayDay(int n)
 {
-int num1=20,num2=30,sum=0;
-System.out.println("num1="+num1);
-System.out.println("num2="+num2);
-sum =num1 + num2;
-System.out.println("The sum="+sum);
-System.out.println(num1 +"+"+num2 +"="+sum);
+switch(n){
+case 0: System.out.println("Sunday");break;
+case 1: System.out.println("Monday");break;
+case 2: System.out.println("Tuesday");break;
+case 3: System.out.println("Wednesday");break;
+case 4: System.out.println("Thursday");break;
+case 5: System.out.println("Friday");break;
+case 6: System.out.println("Saturday");break;
+default: System.out.println("INVALID");
 }
 }
-
+public static void main(String[] args){
+Scanner scob=new Scanner(System.in);
+int dn;
+dn=scob.nextInt();
+displayDay(dn);
+}
+}
