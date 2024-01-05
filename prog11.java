@@ -1,21 +1,18 @@
 import java.util.Scanner;
-class findmax{
-public static void main(String args[]){
+class ReverseString{
+public static void main(String args[])
+{
 Scanner sc=new Scanner(System.in);
-int a=sc.nextInt();
-int b=sc.nextInt();
-int c=sc.nextInt();
-int max;
-if(a>b)
+
+String n;
+String rs="";
+System.out.print("Enter a String: ");
+n=sc.next();
+int len=n.length()-1;
+for(int i=len;i>=0;i--)
 {
-if(a>c) max=a;
-else max=c;
+rs = rs+n.charAt(i);
 }
-else
-{
-if(b>c) max=b;
-else max=c;
-}
-System.out.print("Maximum no is"+max);
+System.out.println("Reversed String ="+rs);
 }
 }

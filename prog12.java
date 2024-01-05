@@ -1,21 +1,20 @@
 import java.util.Scanner;
-class findmin{
-public static void main(String args[]){
+class ReverseString{
+public static void main(String args[])
+{
 Scanner sc=new Scanner(System.in);
-int a=sc.nextInt();
-int b=sc.nextInt();
-int c=sc.nextInt();
-int min;
-if(a<b)
+String n;
+String rs="";
+System.out.print("Enter  String:");
+n=sc.next();
+int len=n.length()-1;
+for(int i=len;i>=0;i--)
 {
-if(a<c) min=a;
-else min=c;
+rs = rs+n.charAt(i);
 }
+if(n.equals(rs))
+{System.out.println("Palindrome");}
 else
-{
-if(b<c) min=b;
-else min=c;
-}
-System.out.print("Minimum no is"+min);
+{System.out.println("Not a Palindrome");}
 }
 }

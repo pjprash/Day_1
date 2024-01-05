@@ -1,17 +1,20 @@
 import java.util.Scanner;
-class Pattern2{
-public static void main(String args[]){
+class PalindromeNumbers
+{
+public static void main(String[] args){
 Scanner sc=new Scanner(System.in);
-char ch=sc.nextInt().charAt(0);
-int row=sc.nextInt();
-printPattern(ch,row);
+int n;
+ int rd=0;
+System.out.print("Enter any positive integer:");
+n= sc.nextInt();
+int num=n;
+while(n>0){
+rd=rd*10+(n%10);
+n=n/10;
 }
+if(num==rd)
+{System.out.println("Palindrome");}
+else
+{System.out.println("Not Palindrome");}
 }
-public static void printPattern(char c, int n){
-for(int i=1;i<=n;i++){
-printLine(c,i);
-}}
-public static void printLine(char c,int col){
-System.out.print("\n");
-for(int j=1;j<=col;j++)System.out.print(c);
 }

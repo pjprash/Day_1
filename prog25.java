@@ -1,15 +1,29 @@
-class PrintNumbers {
-    public static void main(String[] args) {
-        // Printing 0 to 100
-        System.out.println("Numbers from 0 to 100:");
-        for (int i = 0; i <= 100; i++) {
-            System.out.println(i);
-        }
+import java.util.Scanner;
 
-        // Printing 0 to 100 in steps of -5
-        System.out.println("\nNumbers from 0 to 100 in steps of -5:");
-        for (int j = 0; j >= -100; j -= 5) {
-            System.out.println(j);
+class ArmstrongNumberChecker {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int userInput = scanner.nextInt();
+if (isArmstrong(userInput)) {
+System.out.println(userInput + " is an Armstrong number.");
+} else {
+            System.out.println(userInput + " is not an Armstrong number.");
         }
+    }
+    static boolean isArmstrong(int number) {
+        int originalNumber, remainder, result = 0, n = 0;
+        originalNumber = number;
+        while (originalNumber != 0) {
+            originalNumber /= 10;
+            ++n;
+        }
+        originalNumber = number;
+        while (originalNumber != 0) {
+            remainder = originalNumber % 10;
+            result += Math.pow(remainder, n);
+            originalNumber /= 10;
+        }
+        return result == number;
     }
 }

@@ -1,20 +1,13 @@
-import java.util.*;
-class Program201{
+class Test{
 public static void main(String args[]){
-Scanner sc=new Scanner(System.in);
-int n;
-System.out.println("Enter the number:");
-n = sc.nextInt();
-if(n%2==0)
+int i=0;
+int sum=0;
+for(i<=100)
 {
-System.out.print("Even\n");
-System.out.print(n+ "Even\n");
+System.out.print(i+"+");
+sum=sum+i;//sum +=i;
+i=i+5;
 }
-else
-{
-System.out.print("Odd\n");
-System.out.print(n+"Odd\n");
+System.out.println("\b"+"="+sum);
 }
 }
-}
-
